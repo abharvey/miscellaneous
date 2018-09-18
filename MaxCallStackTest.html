@@ -1,0 +1,19 @@
+<head></head>
+<script>
+    function maxCallStack() {
+        console.log(computeMaxCallStackSize());
+    }
+    function computeMaxCallStackSize() {
+        try {
+            return 1 + computeMaxCallStackSize();
+        } catch (e) {
+            // Call stack overflow
+            return 1;
+        }
+    }
+</script>
+
+<body onload="maxCallStack()">
+    <div></div>
+</body>
+

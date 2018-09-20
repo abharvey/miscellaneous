@@ -5,6 +5,7 @@
 
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/aharvey/.oh-my-zsh
+export REACT_EDITOR=vscode
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -57,8 +58,19 @@ alias build='npm run build'
 alias gpl='git pull'
 alias demo='npm run demo'
 alias demobuild='npm run demo:build'
-alias shipit='npm run latest-deploy'
+alias shipit='npm run latest-deploy --'
+alias lint='npm run lint'
+alias rerun='npm run build-cli && npm run cli'
+alias rebase='git rebase -i master'
+alias clier='npm run cli -- -s'
+alias gpf='gp -f --no-verify'
+alias gs='git status'
 
+#yarn BS
+alias why='rm -rf node_modules && yarn'
+alias ydev='yarn start-ui'
+alias yt='yarn test'
+alias ytt='yarn test -- -u'
 
 # DISABLE_UNTRACKED_FILES_DIRTY="true"
 
@@ -113,3 +125,4 @@ export NVM_DIR="$HOME/.nvm"
 export ANDROID_HOME=$HOME/Library/Android/sdk
 export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$ANDROID_HOME/platform-tools
+

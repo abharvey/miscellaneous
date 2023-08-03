@@ -53,7 +53,7 @@ alias jj="jest -u"
 alias dev="npm run dev"
 alias latest="npm run latest-build"
 alias billed="npm run dev-build"
-alias fuckit='git add -A; git commit -m "WIP" --no-verify; git push -u --no-verify'
+alias fuckit='git add -A; git commit --reuse-message=HEAD --no-verify; git push -u --no-verify'
 alias build='npm run build'
 alias gpl='git pull'
 alias demo='npm run demo'
